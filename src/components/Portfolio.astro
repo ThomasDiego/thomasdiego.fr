@@ -1,12 +1,37 @@
+---
+import adh from "../assets/adh.jpg";
+import lplanner from "../assets/lplanner.jpg";
+import thecartrade from "../assets/thecartrade.jpg";
+import abracadamiss from "../assets/abracadamiss.png";
+---
+
 <div class="portfolio">
     <div class="container">
         <div class="pageTitle">Portfolio</div>
         <div class="portfolioList">
-            <div class="projet"><div class="projetImage"></div></div>
-            <div class="projet"><div class="projetImage"></div></div>
-            <div class="projet"><div class="projetImage"></div></div>
-            <div class="projet"><div class="projetImage"></div></div>
-            <div class="projet"><div class="projetImage"></div></div>
+            <a href="#" class="projet" style={`background-image:url(${adh}) `}
+            ></a>
+            <a
+                href="#"
+                href="#"
+                v
+                class="projet"
+                style={`background-image:url(${lplanner}) `}
+            >
+            </a>
+            <a
+                href="#"
+                class="projet"
+                style={`background-image:url(${thecartrade}) `}
+            >
+            </a>
+            <a
+                href="#"
+                class="projet"
+                style={`background-image:url(${abracadamiss}) `}
+            >
+            </a>
+            <div class="projet soon"></div>
         </div>
     </div>
 </div>
@@ -31,19 +56,32 @@
         aspect-ratio: 16/9;
         background-color: #151813;
         border-radius: 5px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
     }
-    .projet::after {
-        content: "Bientôt vous ici?";
+    .soon::before {
+        content: "Bient\f4t vous ici?";
         display: flex;
         justify-content: center;
-        color: #21251e;
+        color: #31362d;
         font-size: 20px;
         height: 100%;
         place-content: center;
         align-items: center;
         display: relative;
     }
-    .projetImage {
-        position: absolute;
+    .projet:hover {
+        opacity: 0.5;
+        border: 5px solid #23410b;
+    }
+    .projetText {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .projetText:hover {
+        opacity: 1;
+        color: white;
     }
 </style>
