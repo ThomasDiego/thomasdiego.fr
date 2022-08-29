@@ -1,0 +1,49 @@
+<div class="portfolio">
+    <div class="container">
+        <div class="pageTitle">Portfolio</div>
+        <div class="portfolioList">
+            <div class="projet"><div class="projetImage"></div></div>
+            <div class="projet"><div class="projetImage"></div></div>
+            <div class="projet"><div class="projetImage"></div></div>
+            <div class="projet"><div class="projetImage"></div></div>
+            <div class="projet"><div class="projetImage"></div></div>
+        </div>
+    </div>
+</div>
+<style>
+    .portfolio {
+        background-color: #10120e;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .pageTitle {
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+    }
+    .portfolioList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .projet {
+        aspect-ratio: 16/9;
+        background-color: #151813;
+        border-radius: 5px;
+    }
+    .projet::after {
+        content: "Bientôt vous ici?";
+        display: flex;
+        justify-content: center;
+        color: #21251e;
+        font-size: 20px;
+        height: 100%;
+        place-content: center;
+        align-items: center;
+        display: relative;
+    }
+    .projetImage {
+        position: absolute;
+    }
+</style>

@@ -1,0 +1,43 @@
+---
+import Header from "../components/Header.astro";
+import Main from "../components/Main.astro";
+import Services from "../components/Services.astro";
+import Portfolio from "../components/Portfolio.astro";
+---
+
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Thomas Diego</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Ma superbe description de ouf" />
+    </head>
+    <Header />
+    <Main />
+    <Services />
+    <Portfolio />
+    <style>
+        body {
+            margin: 0;
+            background-color: #f3f3f3;
+            font-family: system-ui;
+        }
+        :global(*) {
+            box-sizing: border-box;
+        }
+        :global(.container) {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        :global(@media (max-width: 1200px)) {
+            .container {
+                width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    </style>
+
+
+</html>
