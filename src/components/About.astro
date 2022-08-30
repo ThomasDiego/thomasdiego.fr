@@ -5,7 +5,21 @@ import me from "../assets/fsdfsaaedsq.png";
 <div class="about">
     <div class="container">
         <div class="pageTitle">A propos</div>
-        <!--<img src={me} alt="" /> -->
+        <div class="desc">
+            <div class="descLeft">
+                <div class="photo"><img src={me} alt="" /></div>
+            </div>
+            <div class="descRight">
+                <div class="name">Thomas Diego</div><div class="descContent">
+                    Passionné par le monde informatique depuis tout petit, je me
+                    suis formé grâce à internet tout en réalisant de petits et
+                    grands projets personnels.<br /> Mes compétences acquises m'ont
+                    permis de pouvoir faire monter plus facilement ma chaine YouTube,
+                    ainsi qu'un jeu que j'ai commencé à codé depuis le collège et
+                    que je continue d'améliorer à l'heure d'aujourd'hui.
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <style>
@@ -19,5 +33,27 @@ import me from "../assets/fsdfsaaedsq.png";
         text-align: center;
         color: white;
         margin-bottom: 50px;
+    }
+    .photo {
+        border-radius: 50%;
+        background-color: rgb(41, 41, 41);
+        width: fit-content;
+        overflow: hidden;
+    }
+    .desc {
+        display: flex;
+        gap: 10px;
+    }
+    .name {
+        font-size: 25px;
+        color: white;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    .descRight {
+        align-self: center;
+    }
+    .descContent {
+        color: white;
     }
 </style>
